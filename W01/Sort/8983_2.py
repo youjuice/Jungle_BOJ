@@ -19,20 +19,10 @@ for a, b in animals:
     Min = a + b - L
     Max = a - b + L
 
-    start = 0
-    end = len(shots) - 1
-
-    while start <= end:
-        mid = (start + end) // 2
-        if Min <= shots[mid] <= Max:
+    for z in range(len(shots)):
+        if Min <= shots[z] <= Max:
             count += 1
             break
-
-        elif shots[mid] < Max:
-             start = mid + 1
-
-        else:
-            end = mid - 1
 
 print(count)
 

@@ -6,8 +6,8 @@ def square(x, y, n):
         for j in range(y, y+n):
             if color != paper[i][j]:
                 square(x, y, n//2)
-                square(x + n//2, y, n//2)
                 square(x, y + n//2, n//2)
+                square(x + n//2, y, n//2)
                 square(x + n//2, y + n//2, n//2)
                 return
 
